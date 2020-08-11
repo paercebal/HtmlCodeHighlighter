@@ -1,0 +1,80 @@
+<html>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<script src="paercebal.HtmlCodeHighlighter.js"></script>
+<script src="paercebal.HtmlCodeHighlighter.debugging.js"></script>
+<script src="paercebal.HtmlCodeHighlighter.highlighting.js"></script>
+<script src="paercebal.HtmlCodeHighlighter.parsing.js"></script>
+<script src="paercebal.HtmlCodeHighlighter.samples.js"></script>
+<script src="paercebal.HtmlCodeHighlighter.versioning.js"></script>
+<title>HTML Code Highlighter Reloaded</title>
+<style>@import url("paercebal.HtmlCodeHighlighter.css");</style>
+<style id="ID_styleForVariant">
+</style>
+<style id="ID_styleForCodeStyle">
+</style>
+</head>
+<body onload="paercebal.HtmlCodeHighlighter.versioning.updateVersion(); paercebal.HtmlCodeHighlighter.highlighting.updateCorrectCssStyleAccordingToBrowser(); updateCodeStyle(); paercebal.HtmlCodeHighlighter.events.onLoad()">
+<h1 id="ID_title">HTML Code Highlighter</h1>
+
+<noscript><div class="cssNoScriptWarning">JavaScript is disabled<br />Some features in this page will be missing.</div></noscript>
+
+<center>
+<table>
+<tr>
+   <td>
+      <center>
+         Tabulation size&#160;: <input id="ID_tabulationSize" type="text" size="1" value="3" />
+         &nbsp;&nbsp;&nbsp;&nbsp;
+         <button type="button" onclick="paercebal.HtmlCodeHighlighter.events.clearBranchFilenameAndLine()">Clear</button>
+         File name&#160;: <input id="ID_fileName" type="text" size="50" value="" />
+         <button type="button" onclick="paercebal.HtmlCodeHighlighter.events.()">C</button>
+         Line start&#160;: <input id="ID_lineStart" type="text" size="5" value="" />
+         <br />
+         <textarea id="ID_input" cols="120" rows="25"></textarea>
+         <br />
+         <div class="cssDisplayNone">
+             <textarea id="ID_debug" cols="136" rows="10"></textarea><br />
+             <textarea id="ID_debugHexa" cols="136" rows="5"></textarea><br />
+             <textarea id="ID_debugHexaNormalized" cols="136" rows="5"></textarea><br />
+         </div>
+      </center>
+   </td>
+   <td>
+      CSS code output
+      <br />
+      <textarea id="ID_outputCssCode" cols="20" rows="7"></textarea>
+      <br />
+      HTML code output
+      <br />
+      <textarea id="ID_outputHtmlCode" cols="20" rows="5"></textarea>
+      <br />
+      CSS + HTML code output
+      <br />
+      <textarea id="ID_outputCssHtmlCode" cols="20" rows="10"></textarea>
+   </td>
+</tr>
+<tr>
+   <td colspan="2">
+      <button type="button" onclick="paercebal.HtmlCodeHighlighter.events.doCodeHighlight()" style="width : 100% ; height : 3em ;">Do Code Highlight</button>
+   </td>
+</tr>
+<tr>
+   <td colspan="2">
+      <div style="text-align : left ;">
+         <br />
+         <br />
+         <div id="ID_output">...</div>
+         <br />
+         <br />
+      </div>
+   </td>
+</tr>
+</table>
+</center>
+
+</body>
+</html>
+
