@@ -2,7 +2,7 @@ if(! typeof paercebal.HtmlCodeHighlighter.versioning !== 'undefined') { paerceba
 
 paercebal.HtmlCodeHighlighter.versioning.getVersion = function()
 {
-   return "2.0.0000" ;
+   return "2.0.0001" ;
 }
 
 paercebal.HtmlCodeHighlighter.versioning.updateVersion = function()
