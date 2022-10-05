@@ -42,7 +42,7 @@ paercebal.HtmlCodeHighlighter.events.cleanBranchFilename = function()
    
    if(secondAntiSlash >= 0)
    {
-      filename = filename.substr(secondAntiSlash) ;
+      filename = filename.substr(secondAntiSlash).replace(/\\/g, "/") ;
       document.getElementById("ID_fileName").value = filename ;
    }
 }
